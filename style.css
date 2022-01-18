@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #222f3e !important;
+}
+.navbar{
+    background-color: #8395a7;
+}
+.navbar-toggler, .navbar-toggler-icon{
+    color: #fff;
+}
+.container .navbar-brand{
+    position: relative;
+    display: inline-block;
+    font-size: 3.4rem;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    
+}
+.container .navbar-brand:hover{
+    background-position: 0 100%;
+}
+.nav-item a{
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.nav-item a:hover{
+    color: #222f3e;
+    transition: all 0.5s linear 0.1s;
+}
+.navbar-nav li{
+    padding: 0 1.4rem;
+}
+.main-container{
+    margin: 4rem 0;
+}
+.corona-image{
+    width: 80%;
+}
+.main-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-left h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+}
+.main-left h3{
+    font-size: 2rem;
+    font-weight: 500;
+    /* color: #576574; */
+    color: #fff;
+}
+.social-media{
+    margin: 5rem 0;
+}
+.social-media h2{
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    /* color:#222f3e; */
+    color: #fff;
+}
+.social-media a{
+    color: #2d3436;
+}
+.fab{
+    padding: 0 1.2rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+.insta:hover{
+    cursor: pointer;
+    color: #bc2a8d;
+    transition: ease 2s linear 0.1s;
+}
+.tweet:hover{
+    cursor: pointer;
+    color: #00acee;
+    transition: ease 2s linear 0.1s;
+}
+.fb:hover{
+    cursor: pointer;
+    color: 	#4267B2;
+    transition: ease 2s linear 0.1s;
+}
+.main-left button{
+
+
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1.8rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.main-left button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.main-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem 0;
+}
+.search-container h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    /* color: #222f3e; */
+    color: #fff;
+
+}
+.search-container input{
+    width: 30rem;
+    height: 2.7rem;
+    margin: 2rem 0;
+    border: 0;
+    border-bottom: 0.2rem solid #40407a;
+    outline: 0;
+    font-size: 1.8rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px #9521f3, 0 0 10px #c600ee, 0 0 25px #f704f7;
+}
+.data-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    margin: 0 2rem 3rem 2rem;
+    overflow: hidden;
+    
+    
+}
+.country-card{
+    background-color: #341f97 !important;
+}
+.active_card{
+    background-color: #ee5253 !important;
+}
+.confirmed_card{
+    background-color: #26de81 !important;
+}
+.cases_card{
+    background-color: #2ed573 !important;
+}
+.deaths_card{
+    background-color: #eb2f06 !important;
+}
+.test_card{
+    background-color: #0c2461 !important;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-body h2{
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 1rem;
+}
+.card-title{
+    font-size: 2rem;
+    color: #fff;
+}
+.card-title b{
+    font-size: 3.7rem;
+}
+
+@media (max-width:600px){
+    .main-left h1{
+        font-size: 3rem;
+        font-weight: 800;
+        color: #fff;
+        text-align: center;
+
+    }
+    .main-left h3 {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        color: #fff;
+    }
+    .social-media {
+        margin: 3rem 0;
+    }
+    .main-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .corona-image{
+        width: 100%;
+        overflow: hidden;
+        margin: 2rem 0
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+    .search-container h1 {
+        font-size: 2.7rem;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+    .data-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .card-body h2{
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        word-spacing: 1rem;
+    }
+   
+
+}
