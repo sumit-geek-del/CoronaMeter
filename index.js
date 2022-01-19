@@ -14,7 +14,6 @@ const fetchData = async () => {
     try {
 
         x = textbox_country.value;
-        console.log(x);
 
 
         if (x == '') {
@@ -28,7 +27,9 @@ const fetchData = async () => {
             critical_cases.innerText = res.critical;
             total_cases.innerText = res.cases;
             total_deaths.innerText = res.deaths;
-            tests_done.innerText = res.tests;
+            tests_done.innerText = res.tests; 
+
+            textbox_country.value = '';
 
         }
 
@@ -47,7 +48,6 @@ const firstLoad = async () => {
 
         const data = await fetch(`https://disease.sh/v3/covid-19/countries/india`);
         const res = await data.json();
-        console.log(res);
         country_name.innerText = res.country;
         active_cases.innerText = res.active;
         critical_cases.innerText = res.critical;
@@ -65,6 +65,5 @@ const firstLoad = async () => {
 firstLoad();
 
 
-// Selector
 
 
